@@ -34,7 +34,7 @@ const Router = () => {
             path="/"
             element={
               <>
-                <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                <PageTitle title="Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
                 <ECommerce />
               </>
             }
