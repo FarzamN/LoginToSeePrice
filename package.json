@@ -1,0 +1,28 @@
+{
+  "name": "logintoseeprice",
+  "version": "1.0.0",
+  "description": "This is the app for Shopify's admin panel to manage Login to User Shopify app",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarzamN/LoginToSeePrice.git"
+  },
+  "author": "Farzam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarzamN/LoginToSeePrice/issues"
+  },
+  "homepage": "https://github.com/FarzamN/LoginToSeePrice#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
