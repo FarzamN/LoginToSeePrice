@@ -4,7 +4,7 @@ import { config } from "dotenv";
 import express, { json, urlencoded } from "express";
 import { DBConnection } from "./src/configuration/config.js";
 
-import { authRoute } from "./src/routes/index.js";
+import { authRoute, storeRouter } from "./src/routes/index.js";
 
 config();
 DBConnection();
@@ -17,6 +17,7 @@ app.use(urlencoded({ extended: false }));
 const port = process.env.PORT || 10800;
 
 app.use("/auth", authRoute);
+app.use("/store", storeRouter);
 app.get("/", (_, res) => res.send("𝐋𝐨𝐠𝐢𝐧 𝐓𝐨 𝐒𝐞𝐞 𝐏𝐫𝐢𝐜𝐞!"));
 
 app.listen(port, () =>
