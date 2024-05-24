@@ -1,4 +1,4 @@
-export const baseUrl = "http://localhost:1020";
+export const baseUrl = "http://localhost:1030";
 
 export const catchErr = "Something went wrong please try again later";
 /*
