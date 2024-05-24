@@ -14,13 +14,13 @@ const app = express();
 app.use(json());
 app.use(cors());
 app.use(urlencoded({ extended: false }));
-const port = process.env.PORT || 8010;
+const port = process.env.PORT || 10800;
 
 app.use("/auth", authRoute);
-app.get("/", (_, res) => res.send("Admin Node app!"));
+app.get("/", (_, res) => res.send("𝐋𝐨𝐠𝐢𝐧 𝐓𝐨 𝐒𝐞𝐞 𝐏𝐫𝐢𝐜𝐞!"));
 
 app.listen(port, () =>
   console.log(
-    chalk.hex("#76ABAE")("𝙰𝚍𝚖𝚒𝚗 𝙽𝚘𝚍𝚎 𝚊𝚙𝚙 𝚙𝚘𝚛𝚝", `𝚑𝚝𝚝𝚙://𝚕𝚘𝚌𝚊𝚕𝚑𝚘𝚜𝚝:${port}/`)
+    chalk.hex("#76ABAE")("𝓛𝓸𝓰𝓲𝓷 𝓣𝓸 𝓢𝓮𝓮 𝓟𝓻𝓲𝓬𝓮", `http://localhost:${port}/`)
   )
 );
